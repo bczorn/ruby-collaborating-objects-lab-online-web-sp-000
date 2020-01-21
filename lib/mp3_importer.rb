@@ -7,7 +7,8 @@ class MP3Importer
   end
   
   def files
-    Dir.foreach(@path)
+    Dir.foreach(@path) do |x|
+    end
   end
   
   def import
