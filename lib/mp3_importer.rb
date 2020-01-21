@@ -11,7 +11,7 @@ class MP3Importer
   end
   
   def import
-    
+    until n = @files.
     Song.new_by_filename(@files)
     
   end
