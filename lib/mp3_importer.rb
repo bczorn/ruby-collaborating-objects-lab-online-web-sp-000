@@ -8,14 +8,13 @@ class MP3Importer
   
   def files
     @files = Dir.entries(@path) - %w[.. .]
-    puts @files
+  
   end
   
   def import
-   puts @files
+  
     Song.new_by_filename(@files)
    
-  end
   end
   
 end
