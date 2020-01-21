@@ -19,7 +19,7 @@ class Song
     @artist = x[0]
    
    song = Song.new(@name)
-   artist_name=(@artist)
+   song.artist_name=(@artist)
    return song
   end
   
