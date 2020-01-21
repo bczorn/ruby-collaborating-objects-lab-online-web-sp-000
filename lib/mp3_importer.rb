@@ -7,7 +7,7 @@ class MP3Importer
   end
   
   def files
-    @files = Dir.foreach(@path) - %w[.. .]
+    @files = Dir.entries(@path) - %w[.. .]
   end
   
   def import
