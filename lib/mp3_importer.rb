@@ -8,11 +8,11 @@ class MP3Importer
   end
   
   def files
-    Dir.foreach(@path)
+    Dir.entries(@path)
   end
   
   def import
-    Song.new_from_filename(@@all)
+    Song.new_from_filename
   end
   
 end
